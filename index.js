@@ -14,6 +14,7 @@ const actions = {
   setUserData: userData => state => ({ userData })
 };
 
+
 const getUserDataFn = username => {
   return fetch(`https://api.github.com/users/${username}`)
     .then(res => res.json())
